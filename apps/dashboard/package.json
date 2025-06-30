@@ -14,6 +14,7 @@
     "@demo/api": "workspace:*",
     "@demo/ui": "workspace:*",
     "@tanstack/react-query": "^5.62.2",
+    "@react-hookz/web": "^25.0.1",
     "axios": "^1.7.9",
     "date-fns": "^3.6.0",
     "framer-motion": "^11.12.0",

@@ -42,7 +42,7 @@ export default defineConfig(() => {
           },
         },
         client: {
-          importPath: "../../client/apiClient.ts",
+          importPath: "../../../client/apiClient.ts",
           dataReturnType: "data",
         },
         paramsType: "inline",
@@ -65,7 +65,7 @@ export default defineConfig(() => {
         importPath: "zod",
       }),
       pluginClient({
-        importPath: "../client/apiClient.ts",
+        importPath: "../../client/apiClient.ts",
         output: {
           path: "./client",
           barrelType: "all",

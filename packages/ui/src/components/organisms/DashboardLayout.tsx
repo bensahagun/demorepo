@@ -4,7 +4,7 @@ interface DashboardLayoutProps {
   children: React.ReactNode;
 }
 
-export function DashboardLayout({ children }: DashboardLayoutProps) {
+export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   return (
     <div className="min-h-screen bg-gray-100">
       <nav className="bg-white shadow-sm border-b">
@@ -22,4 +22,4 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
       <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">{children}</main>
     </div>
   );
-}
+};

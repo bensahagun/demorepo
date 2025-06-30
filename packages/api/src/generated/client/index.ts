@@ -1,0 +1,6 @@
+export * from './getProducts.ts'
+export * from './getProductsId.ts'
+export * from './getUsersProfile.ts'
+export * from './postAuthLogin.ts'
+export * from './postProducts.ts'
+export * from './putUsersProfile.ts'

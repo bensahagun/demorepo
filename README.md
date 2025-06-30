@@ -10,7 +10,7 @@ This repository is built on [Turborepo](https://turbo.build/repo/docs) for moder
 ## Setting things up
 
 1. Install dependencies: `pnpm install`
-2. To run the project: `pnpm dev`. This will run the `dashboard`, `passport`, `prototypes` and `design-system` apps.
+2. To run the project: `pnpm dev`. This will run the `dashboard`, `web-app`, `prototypes` and `design-system` apps.
 3. For linting: `pnpm lint`
 4. To build the project `pnpm build`
 
@@ -20,9 +20,8 @@ This Turborepo includes the following packages and apps:
 
 ### Apps and Packages
 
-- `dashboard`: built on Vite SPA in React v18, the platform to manage the passports
-- `passport`: built on NextJS^15 app router, this handles the production passports
-- `prototypes`: built on NextJS^15 app router, contains demo passports
+- `dashboard`: built on Vite SPA in React v18, the platform to manage the products
+- `web-app`: built on NextJS^15 app router, this handles the production products
 - `design-system`: built on Storybook + Vite, to preview our `ui` components
 - `@demo/ui`: our core UI components
 - `@demo/eslint-config`: ESLint configurations

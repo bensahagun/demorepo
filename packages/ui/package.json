@@ -17,11 +17,6 @@
       "require": "./dist/components/organisms/index.js",
       "import": "./dist/components/organisms/index.mjs"
     },
-    "./hooks": {
-      "types": "./dist/hooks/index.d.ts",
-      "require": "./dist/hooks/index.js",
-      "import": "./dist/hooks/index.mjs"
-    },
     "./utils": "./src/utils/index.ts",
     "./tailwind": "./tailwind.config.js",
     "./globals.css": "./src/globals.css"

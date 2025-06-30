@@ -12,6 +12,7 @@
   "dependencies": {
     "@demo/api": "workspace:*",
     "@demo/ui": "workspace:*",
+    "@react-hookz/web": "^25.0.1",
     "@tanstack/react-query": "^5.62.2",
     "next": "^14.2.0",
     "nuqs": "^2.4.3",

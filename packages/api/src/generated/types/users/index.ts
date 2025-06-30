@@ -1,0 +1,2 @@
+export type { GetUsersProfile200, GetUsersProfileQueryResponse, GetUsersProfileQuery } from './GetUsersProfile.ts'
+export type { PutUsersProfile200, PutUsersProfileMutationRequest, PutUsersProfileMutationResponse, PutUsersProfileMutation } from './PutUsersProfile.ts'

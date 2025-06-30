@@ -1,0 +1,5 @@
+{
+  "apps/{prototypes,dashboard,passport}/**/*.{js,ts,tsx}": ["prettier --write", "eslint --fix"],
+  "packages/{ui,api}/**/*.{js,ts,tsx}": ["prettier --write", "eslint --fix"],
+  "*.json": ["prettier --write"]
+}
