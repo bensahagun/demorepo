@@ -24,6 +24,7 @@ This Turborepo includes the following packages and apps:
 - `web-app`: built on NextJS^15 app router, this handles the production products
 - `design-system`: built on Storybook + Vite, to preview our `ui` components
 - `@demo/ui`: our core UI components
+- `@demo/api`: our core API, generates the zod, react-query, and typescript types for the API
 - `@demo/eslint-config`: ESLint configurations
 - `@demo/typescript-config`: TypeScript configurations
 
