@@ -1,0 +1,85 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Introduction" />
+
+# Demo Design System
+
+Welcome to the Demo Design System documentation. This Storybook contains all the reusable components, patterns, and guidelines for building consistent user interfaces across our applications.
+
+## Architecture
+
+Our design system follows atomic design principles:
+
+- **Atoms**: Basic building blocks (buttons, inputs, labels)
+- **Molecules**: Simple combinations of atoms (search forms, card headers)
+- **Organisms**: Complex UI sections (navigation, layouts, feature sections)
+
+## Getting Started
+
+Browse the components in the sidebar to see:
+
+- **Interactive examples** of each component
+- **Props documentation** with controls to experiment
+- **Usage guidelines** and best practices
+- **Accessibility information**
+
+## Packages Used
+
+- **React** - Component framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Utility-first styling
+- **Radix UI** - Accessible primitives
+- **Class Variance Authority** - Component variants
+- **Tailwind Merge** - Class conflict resolution
+
+## Development
+
+```bash
+# Start the design system
+pnpm dev
+
+# Build the design system
+pnpm build
+```
+
+## Usage in Applications
+
+```tsx
+// Import atoms
+import { Button } from "@demo/ui/atoms";
+
+// Import molecules
+import { DataTable } from "@demo/ui/molecules";
+
+// Import organisms
+import { DashboardLayout } from "@demo/ui/organisms";
+
+function MyApp() {
+  return (
+    <DashboardLayout>
+      <Button variant="primary">Click me</Button>
+    </DashboardLayout>
+  );
+}
+```
+
+## Component Guidelines
+
+### Consistency
+
+- Use the design tokens defined in the Tailwind configuration
+- Follow the established color palette and spacing scale
+- Maintain consistent typography hierarchy
+
+### Accessibility
+
+- All components are built with accessibility in mind
+- Keyboard navigation is supported where applicable
+- ARIA attributes are included for screen readers
+- Color contrast meets WCAG guidelines
+
+### Performance
+
+- Components are tree-shakeable
+- Minimal runtime overhead
+- Optimized bundle sizes

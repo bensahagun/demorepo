@@ -1,0 +1,57 @@
+{
+  "name": "@demo/api",
+  "version": "0.0.0",
+  "description": "Generated TypeScript client from OpenAPI specification",
+  "exports": {
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/types/index.js",
+      "import": "./dist/types/index.mjs"
+    },
+    "./hooks": {
+      "types": "./dist/hooks/index.d.ts",
+      "require": "./dist/hooks/index.js",
+      "import": "./dist/hooks/index.mjs"
+    },
+    "./zod": {
+      "types": "./dist/zod/index.d.ts",
+      "require": "./dist/zod/index.js",
+      "import": "./dist/zod/index.mjs"
+    },
+    "./client": {
+      "types": "./dist/client/index.d.ts",
+      "require": "./dist/client/index.js",
+      "import": "./dist/client/index.mjs"
+    }
+  },
+  "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "generate": "kubb generate --log-level info --config kubb.config.ts && pnpm run lint:fix",
+    "build": "tsup",
+    "dev": "pnpm run generate && tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "zod": "^3.23.8",
+    "zod-validation-error": "^3.4.0"
+  },
+  "peerDependencies": {
+    "@tanstack/react-query": "^5.62.2"
+  },
+  "devDependencies": {
+    "@kubb/cli": "^3.11.1",
+    "@kubb/core": "^3.11.1",
+    "@kubb/plugin-client": "^3.11.1",
+    "@kubb/plugin-oas": "^3.11.1",
+    "@kubb/plugin-react-query": "^3.11.1",
+    "@kubb/plugin-ts": "^3.11.1",
+    "@kubb/plugin-zod": "^3.11.1",
+    "@demo/eslint-config": "workspace:*",
+    "@demo/typescript-config": "workspace:*",
+    "@types/node": "^20",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  }
+}
